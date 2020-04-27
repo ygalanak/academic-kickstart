@@ -5,23 +5,66 @@
 
 [[main]]
   name = "Home"
-  url = "#about"
+  url = "#main"
+  weight = 5
+  #pre    = "fas fa-home"
+
+[[main]]
+  name = "CV"
+  url = "files/cv_YGalanakis_Mar2020.pdf"
   weight = 10
 
 [[main]]
-  name = "Posts"
-  url = "#posts"
+  identifier = "research"  
+  name = "Research"
+  url = "research/"  
   weight = 20
 
 [[main]]
-  name = "Projects"
-  url = "#projects"
+  name = "PhD Thesis"
+  parent = "research"
+  url = "research/phd/"
+  weight = 24
+
+
+[[main]]
+  name = "Work in Progress"
+  parent = "research"
+  url = "#workinprogress"
   weight = 30
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "#publications"
   weight = 40
+
+[[main]]
+  name = "Teaching"
+  url = "courses/"
+  weight = 50
+
+#[[main]]
+#  name = "Projects"
+#  url = "#projects"
+#  weight = 20
+
+[[main]]
+  name = "Other"
+  identifier = "other"  
+  weight = 55
+
+[[main]]
+  name = "Virtual Seminars"
+  parent = "other" 
+  url = "/other/virtual/" 
+  weight = 55
+
+[[main]]
+  name = "Data COVID-19"
+  parent = "other" 
+  url = "/other/dataCOVID19/" 
+  weight = 55
+
 
 [[main]]
   name = "Contact"
